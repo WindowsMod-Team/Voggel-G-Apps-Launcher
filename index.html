@@ -14,13 +14,15 @@
         }
 
         body {
-            background-color: #f4f6f9; /* Heller, professioneller Hintergrund */
-            color: #1e293b; /* Dunkelgrauer Text für beste Lesbarkeit */
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+    background-color: #f4f6f9; 
+    color: #1e293b; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Zentriert den Inhalt vertikal */
+    align-items: center;     /* Zentriert den Inhalt horizontal */
+}
+
 
         /* --- HEADER & NAVIGATION --- */
         header {
@@ -45,17 +47,17 @@
         }
 
         /* --- HAUPTBEREICH (VOLLE 16:9 AUSNUTZUNG) --- */
-        main {
-            max-width: 1400px;
-            width: 100%;
-            margin: 40px auto;
-            padding: 0 40px;
-            flex-grow: 1;
-            display: grid;
-            grid-template-columns: 1.2fr 1fr; /* Zwei gleichwertige Spalten */
-            gap: 50px;
-            align-items: center;
-        }
+       main {
+    max-width: 810px; /* Begrenzt die Breite für eine schöne Text-Optik */
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 40px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Zentriert den Text innerhalb des Hauptbereichs */
+    text-align: center;      /* Setzt den Text selbst in die Mitte */
+}
 
         h1 {
             font-size: 2.8rem;
@@ -176,16 +178,6 @@
             color: #64748b;
             width: 100%;
         }
-
-        /* --- RECHTE SPALTE: BILD STYLING --- */         
-.main-image {             
-    width: 80%;             
-    height: auto;             
-    max-height: 500px;             
-    object-fit: contain;             
-    border-radius: 100px;             
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);         
-}
     </style>
 </head>
 <body>
@@ -222,7 +214,7 @@
                 </div>
             </div>
 
-                <a href="https://github.com/WindowsMod-Team/Voggel G-Apps Launcher/releases/download/v1.0.0/Voggel G-Apps Launcher.zip" download class="btn-download">
+                <a href="https://github.com/WindowsMod-Team/Voggel-G-Apps-Launcher/releases/download/v.1.0.0/Voggel.G-Apps.Launcher.zip" download class="btn-download">
     Voggel G-Apps Launcher herunterladen (.ZIP)
 </a>
             </a>
@@ -230,7 +222,6 @@
                 Geprüfte Signatur. Kompatibel mit Windows 10 und Windows 11 (64-Bit).
             </div>
         </div>
-        <img src="Logo.PNG" alt="Voggel G-Apps Launcher" class="main-image">
     </main>
 
     <footer>
